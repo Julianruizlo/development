@@ -17,6 +17,12 @@ public class Controlador {
     public static ArrayList<Sector> getSectores(){
         return Persistencia.getSectores();
     }
+    public static ArrayList<Pais> getPaises(){
+        return Persistencia.getPaises();
+    }
+    public static void guardarAnimal(Mamifero mamifero){
+        Persistencia.agregarAnimal(mamifero);
+    }
     
     public static ArrayList<AnimalViewModel> getAnimales(){
         ArrayList<AnimalViewModel> animales = new ArrayList<>();
